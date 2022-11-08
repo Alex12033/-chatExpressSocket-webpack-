@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "node chatServer.js",
+    "start": "webpack-dev-server --mode development",
     "server": "node chatServer.js"
   },
   "author": "",
