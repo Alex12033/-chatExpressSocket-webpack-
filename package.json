@@ -35,5 +35,8 @@
   "devDependencies": {
     "@webdiscus/pug-loader": "^2.8.2",
     "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
