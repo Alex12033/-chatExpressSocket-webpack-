@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "server": "nodemon chatServer.js"
+    "server": "node chatServer.js"
   },
   "author": "",
   "license": "ISC",
@@ -35,5 +35,8 @@
   "devDependencies": {
     "@webdiscus/pug-loader": "^2.8.2",
     "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
