@@ -4,17 +4,25 @@
   "description": "site for seller company",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development",
     "server": "node chatServer.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.18.10",
-    "@babel/preset-env": "^7.18.10",
-    "babel-loader": "^8.2.5",
-    "css-loader": "^6.7.1",
-    "css-minimizer-webpack-plugin": "^4.0.0",
+   
     "express": "^4.18.2",
+    
+    "socket.io": "^4.5.3"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.5.3",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
@@ -22,15 +30,11 @@
     "nodemailer": "^6.7.8",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "sass-loader": "^13.0.2",
-    "socket.io": "^4.5.3",
-    "socket.io-client": "^4.5.3",
-    "style-loader": "^3.3.1",
-    "terser-webpack-plugin": "^5.3.3",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.9.3"
-  },
-  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
     "@webdiscus/pug-loader": "^2.8.2",
     "nodemon": "^2.0.20"
   },
