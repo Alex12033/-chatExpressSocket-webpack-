@@ -4,8 +4,6 @@
   "description": "site for seller company",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development",
     "server": "node chatServer.js"
   },
   "author": "",
