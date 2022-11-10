@@ -53,7 +53,8 @@ function chatClientModule() {
 
   //set message in socket from text area
   sendBtn.addEventListener("click", function (e) {
-    if (messageArea.innerText) {
+    if (messageArea.innerText !== "") {
+    
       socket.emit(
         "private message",
         username,
@@ -64,7 +65,8 @@ function chatClientModule() {
       allSmilesSrc.length = 0;
 
       messageArea.innerText = "";
-    } else {
+    } else if(messageArea.innerHTML !== ""){
+      
       //else user send only smile without text
       socket.emit("private message", username, "", allSmilesSrc);
 
@@ -191,6 +193,8 @@ function chatClientModule() {
         "span"
       );
 
+      //when user sender to click on input or blur from it
+      // 
       socket.on("isFocus", (isFocus) => {
         focusFlag
           ? (userWrites.style.display = "none")
