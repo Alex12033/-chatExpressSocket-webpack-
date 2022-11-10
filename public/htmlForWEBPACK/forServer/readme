@@ -1,0 +1,6 @@
+this html for development in webpack because in webpack and server another paths
+if you want develop replace this file with file in public folder places
+
+and in index.js dissable client chat file
+
+after you end replace it back and to build project for server with old index html
